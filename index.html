@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Priya Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed19ef9d48.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class='container'>
+            <nav>
+                <img src="images/logo3.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Web Developer</p>
+                <h2>Hi, I'm <span>Hari Priya</span></h2>
+            </div>
+        </div>
+    </div>
+    <!--------------------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg3.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Passionate React Developer and ML Developer
+                        I am a student at JNTUA College Of Engineering PULIVENDULA. 
+                        To obtain a challenging position in a fast growing organisation to utilize and sharpen my skills, 
+                        seeking to leverage broad development experience and hands -on technical expertise in a challenging role as a Developer.
+                        Throughout my career, I have developed a strong foundation in Web technologies and programming skills.
+                         I am proficient in working with various software tools, and I have a proven track record of completing the course related 
+                         achievements or accomplishments relevant to my desired job of front end development. 
+                        My attention to detail, strong analytical skills, 
+                        and ability to think critically have enabled me to consistently deliver high-quality work while meeting strict deadlines.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front End Development</span><br>Designing Web/App interfaces responsively</li>
+                                <li><span>Java Development</span><br>Designing java applications</li>
+                                <li><span>MySQL</span><br>Designing Databases</li>
+                                <li><span>Machine Learning</span><br>Developing ML Models/li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>05/2023-07/2023</span><br>Front End Web Developer intern at IBM</li>
+                                <li><span>06/2023</span><br>Front End Developer Intern at CodeClause</li>
+                                <li><span>05/2023-08/2023</span><br>Devops Intern at Hometute Technolgies Pvt lmt</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2020-2024 BTech</span><br>JNTUA College of Engineering, Pulivendula</li>
+                                <li><span>2018-2020 Intermediate</span><br>Sri Vidya Vikas Jr Collge, Kongareddypalli</li>
+                                <li><span>2018 Secondary Education</span><br>Camford English High School(West campus),Chittoor</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------services------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I am well-versed in a variety of programming languages, including HTML, CSS, JavaScript,nodejs
+                        and have expertise in front-end development frameworks such as React and Angular.
+                        I am well-versed in a variety of programming languages, including HTML, CSS, JavaScript, and have expertise 
+                        in front-end development frameworks such as React and Angular.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Databases</h2>
+                    <p>I have worked extensively with database platforms, such as Oracle, MySQL, and SQL Server.
+                         I am proficient in writing complex SQL queries, 
+                        designing and implementing database schemas, and ensuring data integrity and security.
+                         I have a deep understanding of database normalization principles and the ability to optimize queries and indexes for improved performance.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>ML Developer</h2>
+                    <p>I have demonstrated proficiency in analyzing complex datasets, extracting valuable information,
+                         and presenting actionable recommendations. I am well-versed in data manipulation, data visualization,
+                          and statistical analysis techniques. I am highly proficient in programming languages such as Python
+                         and I have a solid understanding of SQL for data querying and extraction.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------Portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Web Design</h3>
+                        <p>BCC news web page using the html,css, js technologies</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Java applications</h3>
+                        <p>Completed miniprojects of ONLINE EXAMINATION, NUMBER GUESSING GAME and ATM INTERFACE using java technologies</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Facebook Login</h3>
+                        <p>Facbook login web page using the html,css, js technologies</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-----------------------------------contact---------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>haripriya2813@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9014776083</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hari-priya-a89221218"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Haripriya1328"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Made by HariPriya</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4HOG6SZfWd6_u1-Sqk-NsyB01BCApUuOhps27ypDwfW0qD-XsFf9W1RnoqtUfFwX1MA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
